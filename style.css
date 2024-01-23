@@ -1,0 +1,79 @@
+/* Define o estilo para o corpo da página */
+body {
+    font-family: Arial, sans-serif; /* Define a família de fontes para o corpo */
+    margin: 0; /* Remove a margem padrão */
+    padding: 0; /* Remove o preenchimento padrão */
+    display: flex; /* Utiliza o modelo Flexbox para o layout */
+    flex-direction: column; /* Organiza os elementos em coluna */
+    justify-content: flex-start; /* Alinha os itens no início do eixo principal */
+    align-items: center; /* Centraliza os itens ao longo do eixo transversal */
+    height: 100vh; /* Define a altura do corpo como 100% da altura da viewport */
+    background-color: #e0f5e0; /* Tons de verde claro para o fundo */
+}
+
+/* Estilo para elementos de input */
+input {
+    border: 2px solid #8fbc8f; /* Borda verde musgo para inputs */
+    padding: 8px; /* Adiciona preenchimento aos inputs */
+    margin-bottom: 10px; /* Adiciona margem na parte inferior dos inputs */
+}
+
+/* Estilo para um elemento container */
+.container {
+    text-align: center; /* Centraliza o texto dentro do container */
+}
+
+/* Estilo para listas não ordenadas */
+ul {
+    list-style-type: none; /* Remove a estilização padrão de listas */
+    padding: 0; /* Remove o preenchimento padrão */
+    margin-top: 10px; /* Adiciona margem no topo da lista */
+}
+
+/* Estilo para tarefas individuais na lista */
+.tarefa {
+    display: flex; /* Utiliza o modelo Flexbox para o layout das tarefas */
+    justify-content: space-between; /* Espaça uniformemente os elementos da tarefa */
+    align-items: center; /* Centraliza os itens ao longo do eixo transversal */
+    padding: 8px; /* Adiciona preenchimento às tarefas */
+    background-color: #e0f5e0; /* Tons de verde claro para o fundo da tarefa */
+    border: 1px solid #8fbc8f; /* Borda verde musgo para as tarefas */
+}
+
+/* Estilo para o texto dentro de uma tarefa */
+.texto-tarefa {
+    flex-grow: 1; /* Permite que o texto cresça para ocupar o espaço disponível */
+    text-align: left; /* Alinha o texto à esquerda dentro da tarefa */
+    margin-right: 10px; /* Adiciona margem à direita do texto */
+}
+
+/* Estilo para tarefas concluídas */
+.concluida .texto-tarefa {
+    text-decoration: line-through; /* Adiciona uma linha através do texto para tarefas concluídas */
+    opacity: 0.7; /* Reduz a opacidade para tarefas concluídas */
+}
+
+/* Estilo para botões dentro de uma tarefa */
+.botoes-tarefa {
+    display: flex; /* Utiliza o modelo Flexbox para o layout dos botões de tarefa */
+    gap: 8px; /* Define o espaçamento entre os botões */
+}
+
+/* Estilo para botões individuais de tarefa */
+.botoes-tarefa button {
+    margin-left: 10px; /* Adiciona margem à esquerda para os botões de tarefa */
+}
+
+/* Estilo para botões genéricos */
+button {
+    background-color: #8fbc8f; /* Fundo verde musgo para os botões */
+    color: #fff; /* Texto branco para melhor legibilidade */
+    padding: 8px; /* Adiciona preenchimento aos botões */
+    border: none; /* Remove as bordas dos botões */
+    cursor: pointer; /* Define o cursor como ponteiro para melhor interação */
+}
+
+/* Efeito de hover para os botões */
+button:hover {
+    background-color: #4caf50; /* Tons de verde mais escuro para realçar no hover */
+}
